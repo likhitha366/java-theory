@@ -1,0 +1,38 @@
+package Com.sample;
+class animal{
+	public void eat() {
+		System.out.println("i can eat");
+	}
+   
+}
+class Dog extends animal{
+	public void bark() {
+		System.out.println("i can bark");
+	}
+	public void drink() {
+		System.out.println("i can drink milk");
+	}
+}
+class Cat extends Dog{
+	public void meow() {
+		System.out.println("i say meow");
+	}
+}
+
+public class inheritance {
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		d.eat();
+		d.bark();
+		Cat c= new Cat();
+		c.eat();
+		c.drink();
+		c.meow();
+	}
+
+}
+OUTPUT :
+i can bark
+i can eat
+i can drink milk
+i say meow
